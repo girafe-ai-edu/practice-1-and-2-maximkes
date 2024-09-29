@@ -4,3 +4,12 @@ Develop a program that asks the user for an integer 4-digit number and calculate
 3 + 1 + 4 + 1 = 9
 
 """
+#original_number = 1234
+original_number = int(input())
+
+res = 0
+while original_number>0:
+    res = res+original_number%10
+    original_number = original_number//10
+    
+print(res)
